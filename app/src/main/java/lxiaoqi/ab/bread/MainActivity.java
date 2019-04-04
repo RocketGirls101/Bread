@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         mFragments=new ArrayList<>(3);
         //修改
         mFragments.add(PictureFragment.getInstance());
-        mFragments.add(BlankFragment.newInstance("记录"));
-        mFragments.add(BlankFragment.newInstance("通讯录"));
+        mFragments.add(BlankFragment.newInstance("video"));
+        mFragments.add(BlankFragment.newInstance("me"));
 
         mAdapter=new MyFragmentPagerAdapter(getSupportFragmentManager(),mFragments);
         mViewPager.setAdapter(mAdapter);
